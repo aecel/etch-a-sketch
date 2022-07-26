@@ -27,20 +27,8 @@ changeCanvas = (e) => {
     console.log(`${input.value} is a ${typeof input.value}`);
 }
 
-// Initial canvas, not working
-// makeFirstCanvas = () => {
-//     let executed = false;
-//     return function () {
-//         if (!executed) {
-//             executed = true;
-//             makeCanvas(16);
-//         }
-//     };
-// }
-
 const canvas = document.getElementById("canvas");
 const button = document.getElementById("submit");
 const input = document.getElementById("input");
+makeCanvas(16);
 button.addEventListener('click', changeCanvas);
-
-// makeFirstCanvas();
