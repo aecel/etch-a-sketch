@@ -1,7 +1,31 @@
+body {
+    margin: 0;
+}
+
 #canvas {
     border: 1px dashed black;
     margin: 20px;
     height: 500px;
     width: 500px;
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(16, 1fr);
+}
+
+#input {
+    width:300px;
+}
+
+.input-container {
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    gap: 5px;
+}
+
+.square {
     
+    background-color: blue;
 }
